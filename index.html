@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@300;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My-Movie-List</title>
+  </head>
+  <body>
+    <header>
+      <p>Top 375 Movies Data</p>
+      <div class="search-div">
+        <input type="text" placeholder="Search all movie" />
+        <img src="search.svg" alt="search-img" onclick="myfunction()" />
+      </div>
+    </header>
+    <section>
+      <div id="message">
+        <p>Wel-Come</p>
+        <p>Please Click on Search Icon Button</p>
+      </div>
+    </section>
+    <section id="show-all-data">
+      <div class="movies-data">
+        <div id="all-movie">
+          <!-- all movie data -->
+        </div>
+        <hr>
+        <div class="two-btn">
+          <button id="pre" onclick="pageNumber('pre')">Previous</button>
+          <button id="next" onclick="pageNumber('next')">Next</button>
+        </div>
+
+        <div id="one-data">
+          <!-- Perticular movie data  -->
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
